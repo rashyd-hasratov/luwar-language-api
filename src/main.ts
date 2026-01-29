@@ -4,7 +4,7 @@ import { DEFAULT_PORT } from './constants';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-  const port = process.env.PORT ? parseInt(process.env.PORT) : DEFAULT_PORT
+  const port = process.env.PORT ? parseInt(process.env.PORT) : DEFAULT_PORT;
 
   await app.listen(port);
 }
